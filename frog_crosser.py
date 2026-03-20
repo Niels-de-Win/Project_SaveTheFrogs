@@ -98,7 +98,7 @@ while True:
 
     print(f"[{timestamp}] Gezien: {class_name[2:]} ({confidence_score:.2f}) | Snelheid: {processing_time:.1f}s")
 
-    if not int(class_name[0:1]):
+    if not bool(class_name[0:1]):
         os.system(f"rm {PHOTO_PATH}")
 
     # De dynamische adempauze
